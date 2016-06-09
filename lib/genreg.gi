@@ -1,3 +1,9 @@
+if not(IsBound(StartsWith)) then
+    StartsWith:=function ( string, prefix )
+    return Length( prefix ) <= Length( string ) and string{[ 1 .. Length( prefix ) ]} = prefix;
+end;
+fi;
+
 #V  GenregDirectory
 ##
 InstallValue( GenregDirectory, 
