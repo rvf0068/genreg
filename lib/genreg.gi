@@ -81,4 +81,12 @@ function(n, k)
     return GenregFixList@(SplitString(str,"\n"));               
 end);
 
-
+#F  GenregGRAPEgraph( l )
+##
+InstallGlobalFunction( GenregGRAPEgraph, function( l )
+    local ady;
+    ady := function(x, y)
+        return y in l[x];
+    end;
+    return Graph(Group(()), [1..Length(l)], OnPoints, ady, true);
+end);

@@ -52,3 +52,20 @@ DeclareGlobalFunction( "GenregFixList@" );
 
 DeclareOperation( "GenregAdjList", [ IsInt, IsInt, IsInt ] );
 DeclareOperation( "GenregAdjList", [ IsInt, IsInt ] );
+
+#F  GenregGRAPEgraph( l )
+##
+##  <#GAPDoc Label="GenregGRAPEgraph">
+##  <ManSection>
+##  <Func Name="GenregGRAPEgraph" Arg="l"/>
+##
+##  <Description>
+##
+##  Given a list of adjacencies of a graph <A>l</A>, it returns the
+##  corresponding graph in GRAPE format.
+##
+##  </Description>
+##
+##  </ManSection>
+##  <#/GAPDoc>
+DeclareGlobalFunction( "GenregGRAPEgraph" );
